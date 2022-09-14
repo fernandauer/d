@@ -1,0 +1,51 @@
+:root{
+    font-size:62,5%;
+    box-sizing: border-box;
+
+    --primary-color:#000;
+    --secondary-color:blue;
+    --tertiary-color:#fff;
+}
+
+body{
+    margin:0;
+}
+
+/*capa*/
+
+.background-ps{
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.background-sp{}
+
+h1{
+
+}
+
+#capa #row-capa{
+    position: absolute;
+    margin:280px 0 0 316;
+    
+
+}
+#capa{
+    height:1080px;
+}
+
+#row-capa img{
+    display:inline-block;
+    height: 400px;
+    width:400px;
+    border-radius: 50%;
+    border:2px solid var(--tertiary-color);
+    box-shadow: var(--tertiary-color)0px 0px 15px;
+}
+
+#row-capa h1{
+    display:inline-block;
+    color:var(--tertiary-color);
+    position:relative;
+    top:-165px;
+    left:50px;
+}
