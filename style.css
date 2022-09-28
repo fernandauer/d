@@ -19,11 +19,11 @@ body {
 .background-sp {}
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 20px;
 }
 
 h2{
-    font-size:3.5rem;
+    font-size:20px;
     color:var(--tertiary-color);
 }
 
@@ -94,8 +94,8 @@ li:hover{
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin: 9px;
-    padding: 4px;
+    top:-1.2rem;
+    left:1rem;
 }
 
   
@@ -157,7 +157,46 @@ li:hover{
 
 h3{
     margin: 30px;
-    padding: 15px;
     font-size: 20px;
     display:inline-block;
+}
+
+#dark-light{
+  display: inline-block;
+}
+
+dark-light p{
+  color:white;
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+/* estilização da biografia */
+
+#biografia{
+  display: grid;
+  grid-template-columns: 20rem 1fr 20rem;
+  grid-template-rows: 1fr 10rem;
+  grid-area: content;
+  justify-items: normal;
+  background-color: aqua;
+  
+}
+
+.grid-item{
+  text-align: center;
+  margin:1rem;
+  background-color: bisque;
+}
+
+.text{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height:10rem;
+}
+
+.content{
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
