@@ -177,7 +177,7 @@ dark-light p{
 #biografia{
   display: grid;
   grid-template-columns: 20rem 1fr 20rem;
-  grid-template-rows: 1fr 10rem;
+  grid-template-rows: 10rem 1fr;
   grid-area: content;
   justify-items: normal;
   background-color: aqua;
@@ -199,4 +199,17 @@ dark-light p{
 .content{
   grid-column-start: 2;
   grid-column-end: 3;
+  grid-template-columns: 1rem 1fr 1fr 1rem;
+  margin-bottom: 12rem;
+}
+
+.grid-item-item1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+
+
+figure{
+  margin:0;
 }
