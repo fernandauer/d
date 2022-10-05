@@ -12,18 +12,36 @@
 
     <meta charset="UTF-8">
     <title>Minha Bibliografia</title>
+    <script>
+        function darkMode()
+            let texto = document.getElementById('dark-text');
+            console.log(text.value);
+            if (texto.innerHTML == "Dark"){
+                texto.innerHTML = "Light";
+            }else{
+                texto.innerHTML = "Dark";
+        }
+
+        function tempo(){
+
+        }
+
+
+
+    </script>
 </head>
 
-<body>
+<body onload="tempo()">
 
-    <nav>
-        <h3>Dark mode</h3>
-
+    <nav id="menu">
+        <div id="dark-light">
+         <p id="dark-text">Dark</p>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" onclick="darkMode()">
             <span class="slider"></span>
         </label>
-
+        </nav>
+        </div>
         <ul>
             <a href="#">
                 <li>
