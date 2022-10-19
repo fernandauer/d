@@ -263,3 +263,78 @@ item:hover{
   --Bfume: rgba(255, 255, 255, 0.4);
   --Wfume: rgba(0, 0, 0, 0.4);
 }
+
+#portfolio{
+  display: flex;
+  flex-direction: column ;
+  justify-content:center ;
+  align-items: center;
+}
+
+#tecnologias{
+  background-color: var(--Bfume);
+  width: 40%;
+  height:20rem ;
+  border-radius: 1.2rem 0;
+  flex-direction: column ;
+  justify-content:center ;
+  align-items: center; 
+  justify-content: space-evenly;
+}
+
+#tecnologias select{
+  width:90%;
+  font-size: 2.5rem;
+  border-radius: 1.2rem 0  ;
+
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#tecnologias.row{
+  display: flex;
+  flex-direction: row;
+}
+#tecnologias .col{
+  display:flex;
+  flex-direction: column;
+
+
+} 
+
+#tecnologia input{
+  width: 2rem;
+  height: 2rem;
+}
+
+#tecnologia label{
+  font-size: 2.2rem;
+  color: var(--tertiary-color);
+}
+
+tecnologias .center{
+  margin: auto 18rem;
+
+
+}
+#tecnologia .topo {
+  margin-bottom: 1rem;
+  height:50rem;
+
+}
+
+#projetos {
+
+}
+
+#projeto #slider{
+  width:70%;
+  border-radius: 1.2rem 0;
+}
+
+#projetos figcaption{
+
+}
