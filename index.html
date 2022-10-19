@@ -12,36 +12,44 @@
 
     <meta charset="UTF-8">
     <title>Minha Bibliografia</title>
-    <script>
-        function darkMode()
-            let texto = document.getElementById('dark-text');
-            console.log(text.value);
-            if (texto.innerHTML == "Dark"){
-                texto.innerHTML = "Light";
-            }else{
-                texto.innerHTML = "Dark";
+
+    <script defer>
+        function changeTheme() {
+            let text = document.getElementById("dark-text");
+            let body = document.getElementById("body");
+
+            body.classList.replace(
+                `${text.innerHTML == "Dark" ? "dark-mode" : "light-mode"}`,
+                `${text.innerHTML == "Light" ? "dark-mode" : "light-mode"}`
+            );
+
+            text.innerHTML = text.innerHTML == "Dark" ? "Light" : "Dark";
         }
 
-        function tempo(){
+        function setTheme() {
+            let hour = new Date().getHours();
+            let body = document.getElementById("body");
 
+            body.classList.replace(
+                `${hour >= 6 && hour < 18 ? "dark-mode" : "light-mode"}`,
+                `${hour < 6 || hour >= 18 ? "dark-mode" : "light-mode"}`
+            );
         }
-
-
-
     </script>
 </head>
 
-<body onload="tempo()">
-
+<body id="body" class="dark-mode" onload="setTheme()">
     <nav id="menu">
         <div id="dark-light">
-         <p id="dark-text">Dark</p>
-        <label class="switch">
-            <input type="checkbox" onclick="darkMode()">
-            <span class="slider"></span>
-        </label>
-        </nav>
+            <p id="dark-text">Dark</p>
+
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox" onclick="changeTheme()" />
+                <span class="slider round"></span>
+            </label>
         </div>
+
         <ul>
             <a href="#">
                 <li>
